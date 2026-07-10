@@ -10,6 +10,11 @@ router = APIRouter()
 predictor = Predictor()
 
 
+@router.get("/health")
+async def health():
+    return {"status": "ok", "message": "Service is up and running"}
+
+
 @router.post("/predict")
 async def predict(file: UploadFile = File(...)):
 

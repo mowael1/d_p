@@ -1,7 +1,7 @@
 import requests
 import streamlit as st
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://dp-production-2c54.up.railway.app/predict"
 
 st.set_page_config(
     page_title="EuroSAT Classification",
