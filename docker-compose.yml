@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  eurosat-api:
+    build: .
+
+    container_name: eurosat-api
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
